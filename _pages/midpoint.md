@@ -1,7 +1,7 @@
 ---
 layout: about
 title: midpoint
-permalink: /
+permalink: /midpoint/
 
 profile:
   align: right
