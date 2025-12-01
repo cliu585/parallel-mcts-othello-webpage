@@ -1,6 +1,6 @@
 ---
 layout: about
-title: proposal
+title: about
 permalink: /
 
 profile:
