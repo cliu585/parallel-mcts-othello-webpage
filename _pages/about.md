@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: proposal
 permalink: /
 
 profile:
@@ -92,7 +92,7 @@ For leaf parallelism, the GPU is the primary platform. The workload of rollouts 
 | :-------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Week 1:** Nov 17 – Nov 23 | Implement basic Othello game logic Implement the sequential MCTS algorithm for Othello with UCT                                                                                                        | Set up CUDA project structure. Identify data structures requiring CPU–GPU synchronization. Begin early GPU prototype for fast rollouts (simple random playout kernel).                                     |
 | **Week 2:** Nov 24 – Nov 30 | Implement multi-threading for root parallelism using OpenMP. Develop initial benchmarking script (throughput, rollout count, tree size).                                                               | Implement GPU rollout kernel launching from new leaf nodes. Design CPU-GPU communication patterns                                                                                                          |
-| **Week 3:** Nov 31 – Dec 7  | Fine-tune and finalize root parallelism based on the benchmark scripts Run experiments on root parallelism with different parallelization parameters (ex. thread counts) and analyze the final results | Fine-tune and finalize leaf parallelism based on the benchmark scripts Run experiments on root parallelism with different parallelization parameters (ex. kernel dimensions) and analyze the final results |
+| **Week** Nov 31 – Dec 7 | Finalize benchmarking scripts and statistics Fine-tune and finalize root parallelism based on the benchmark scripts Run experiments on root parallelism with different problem sizes and analyze the final results | See if GPU version is feasible still, polish CPU version of leaf parallelism Fine-tune and finalize leaf parallelism based on the benchmark scripts Run experiments on leaf parallelism with different problem sizes and analyze the final results |
 
 **50% Milestone:**  
 Working sequential version of pure MCTS Othello solver and initial benchmark scripts to evaluate the performance of an Othello solver. GPU development environment ready; simple rollout kernel functional.
